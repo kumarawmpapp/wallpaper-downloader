@@ -1,0 +1,20 @@
+{
+  "monitor_count": 2,
+  "wallpaper_retention_count": 8,
+  "query": "nature,landscape",
+  "sources": ["pixabay", "pexels", "unsplash", "bing"],
+  "source_configs": {
+    "unsplash": {
+      
+    },
+    "bing": {
+      
+    },
+    "pexels": {
+     
+    },
+    "pixabay": {
+      
+    }
+  }
+}
