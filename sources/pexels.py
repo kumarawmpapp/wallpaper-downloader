@@ -4,11 +4,17 @@ import os
 
 CONFIG = {
     "endpoint": "https://api.pexels.com/v1/search",
-    "params": {"query": "{query}", "per_page": "{count}", "orientation": "landscape", "size": "medium"},
+    "params": {"query": "{query}", "per_page": "{count}", "orientation": "landscape", "size": "large"},
     "headers": {"Authorization": "{api_key}"},
-    "response_map": "photos[].src.original",
+    "response_map": "photos[].src.landscape",
 }
 
+# CONFIG = {
+#     "endpoint": "https://api.pexels.com/v1/curated",
+#     "params": {"query": "{query}", "per_page": "{count}"},
+#     "headers": {"Authorization": "{api_key}"},
+#     "response_map": "photos[].src.landscape",
+# }
 
 def get_image_urls(query, count, config_override=None):
     from deepmerge import always_merger
